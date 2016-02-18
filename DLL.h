@@ -57,16 +57,7 @@ void insertDLLNodeFront(DLL* dll, int data) {
 */
 
 void insertDLLNodeBack(DLL* dll, int data) {
-    DLLNode* node = createDLLNode(data);
-    if(dll->length == 0) {
-        dll->head = dll->tail = node;
-    } else {
-        node->prev = dll->tail;
-        dll->tail->next = node;
-        dll->tail = node;
-    }
 
-    (dll->length)++;
 }
 
 /*
